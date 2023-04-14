@@ -9,12 +9,12 @@ int main(int argc, char* argv[]) {
 
     PerlinNoise Noise;
 
-    float NoiseScale = 40;
+    float NoiseScale = 50;
 
     std::vector<std::vector<float>> Points;
 
-    unsigned int PointWidth = 200;
-    unsigned int PointHeight = 200;
+    unsigned int PointWidth = 100;
+    unsigned int PointHeight = 100;
 
     for (unsigned int x = 0; x < PointWidth; x++) {
 

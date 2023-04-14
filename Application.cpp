@@ -4,6 +4,7 @@
 
 #include "Application.h"
 #include <SDL2/SDL.h>
+#include <iostream>
 
 Application::Application(std::string Title, unsigned int Width, unsigned int Height, std::vector<std::vector<float>> Points)
 : Title(Title), Width(Width), Height(Height), Window(NULL), Running(true),
@@ -84,7 +85,7 @@ void Application::OnRender() {
 
     SDL_SetRenderDrawColor(Renderer, 255, 255, 255, 255);
 
-    for (unsigned int x = 0; x < Squares.Width; x++) {
+    /*for (unsigned int x = 0; x < Squares.Width; x++) {
 
         for (unsigned int y = 0; y < Squares.Height; y++) {
 
@@ -98,7 +99,7 @@ void Application::OnRender() {
 
         }
 
-    }
+    }*/
 
     for (int connection = 0; connection < Squares.Connections.size(); connection += 2) {
 
